@@ -1,0 +1,1 @@
+# Netology_ajs-homeworks_objects
