@@ -1,0 +1,46 @@
+{
+  "name": "netology_ajs-homeworks_objects",
+  "version": "1.0.0",
+  "description": "working with classes",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvetlanaGreenFox/Netology_ajs-homeworks_objects.git"
+  },
+  "keywords": [
+    "classes",
+    "js",
+    "unit_testing",
+    "JEST"
+  ],
+  "author": "Svetlana Lisina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SvetlanaGreenFox/Netology_ajs-homeworks_objects/issues"
+  },
+  "homepage": "https://github.com/SvetlanaGreenFox/Netology_ajs-homeworks_objects#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.2.5",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^27.2.5",
+    "live-server": "^1.2.1",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "core-js": "^3.18.3"
+  }
+}
