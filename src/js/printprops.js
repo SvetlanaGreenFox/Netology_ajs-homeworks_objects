@@ -1,38 +1,38 @@
-const orderByProps = (obj, prop) => {
+const orderByProps = (character, prop) => {
   const result = [];
 
   for (const property of prop) {
-    for (const key in obj) {
+    for (const key in character) {
       if (key === property) {
         const favorites = {};
-        favorites['key'] = property;
-        favorites['value'] = obj[key];
+        favorites.key = property;
+        favorites.value = character[key];
         result.push(favorites);
       }
     }
-  };
-  console.log(result);
+  }
+
   for (const property of prop) {
-    for (const key in obj) {
+    for (const key in character) {
       if (key === property) {
-        delete obj[key];
+        delete character[key];
       }
     }
-  };
+  }
 
-  const newObj = Object.keys(obj);
+  const newObj = Object.keys(character);
 
-  const sliceObj = newObj.sort((value, value2) => {
-    if (value === value2) {
+  const sliceObj = newObj.sort((value1, value2) => {
+    if (value1 === value2) {
       return 0;
     }
-    return value > value2 ? 1 : -1;
+    return value1 > value2 ? 1 : -1;
   });
 
   sliceObj.forEach((item) => {
     const arr = {};
-    arr['key'] = item;
-    arr['value'] = obj[item];
+    arr.key = item;
+    arr.value = character[item];
     result.push(arr);
   });
 
