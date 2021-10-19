@@ -11,28 +11,25 @@ const orderByProps = (character, prop) => {
       }
     }
   }
-
+  const playerData = character;
   for (const property of prop) {
-    for (const key in character) {
+    for (const key in playerData) {
       if (key === property) {
-        delete character[key];
+        delete playerData[key];
       }
     }
   }
 
-  const newObj = Object.keys(character);
+  const newObj = Object.keys(playerData);
 
   const sliceObj = newObj.sort((value1, value2) => {
-    if (value1 === value2) {
-      return 0;
-    }
     return value1 > value2 ? 1 : -1;
   });
 
   sliceObj.forEach((item) => {
     const arr = {};
     arr.key = item;
-    arr.value = character[item];
+    arr.value = playerData[item];
     result.push(arr);
   });
 
