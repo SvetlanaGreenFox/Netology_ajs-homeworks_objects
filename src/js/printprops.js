@@ -22,9 +22,7 @@ const orderByProps = (character, prop) => {
 
   const newObj = Object.keys(playerData);
 
-  const sliceObj = newObj.sort((value1, value2) => {
-    return value1 > value2 ? 1 : -1;
-  });
+  const sliceObj = newObj.sort((value1, value2) => (value1 > value2 ? 1 : -1));
 
   sliceObj.forEach((item) => {
     const arr = {};
